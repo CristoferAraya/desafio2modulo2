@@ -1,0 +1,93 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color:black;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    text-align: center;
+    height: 30px;
+}
+
+.grid-container{
+    
+    display:grid;
+    width: 100%;
+    grid-template-areas:
+       "navbar navbar"
+       "asidebar productos"
+       "footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 150px ;
+     
+}
+
+.navbar{
+    grid-area: navbar;
+    display: flex;
+    height: 25px;
+    align-items: center;
+    justify-content: center; 
+  
+}
+
+.grid-asidebar{
+    background-color:gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+li{
+    list-style: none;
+}
+
+.grid-productos{
+    grid-area: productos;
+    background-color:white;
+    display: flex;
+    flex-wrap: wrap;
+    
+  
+}
+
+.grid-productos div{
+   width: 30%;
+   border: 1px solid #ddd;
+   margin-bottom: 20px;
+   margin-left: 5px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.precio{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    grid-area: foot;
+    background-color: aquamarine;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: center; 
+}
+
+img{
+    object-fit: cover;
+}
+
+.btn {
+    background-color: blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
